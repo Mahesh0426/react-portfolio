@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple Background -->
+  <rect x="0" y="0" width="32" height="32" fill="#9B4993" />
+
+  <!-- Hexagon for C# Symbol -->
+  <polygon points="16,4 26,10 26,22 16,28 6,22 6,10" fill="#fff" />
+
+  <!-- "C" Text -->
+  <text x="11" y="18" font-family="Arial, sans-serif" font-size="7" fill="#9B4993" font-weight="bold">
+    C
+  </text>
+
+  <!-- "#" Symbol -->
+  <text x="17" y="18" font-family="Arial, sans-serif" font-size="7" fill="#9B4993" font-weight="bold">
+    #
+  </text>
+</svg>

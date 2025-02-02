@@ -1,0 +1,120 @@
+[
+  {
+    "frontend": [
+      {
+        "id": 0,
+        "name": "HTML",
+        "image": "/tech/html-5-svgrepo-com.svg"
+      },
+      {
+        "id": 1,
+        "name": "CSS",
+        "image": "/tech/css-3-svgrepo-com.svg"
+      },
+      {
+        "id": 2,
+        "name": "Javascript",
+        "image": "/tech/js-svgrepo-com.svg"
+      },
+      {
+        "id": 3,
+        "name": "Typescript",
+        "image": "/tech/typescript.svg"
+      },
+      {
+        "id": 4,
+        "name": "React",
+        "image": "/tech/react-svgrepo-com.svg"
+      },
+      {
+        "id": 5,
+        "name": "Tailwind",
+        "image": "/tech/tailwind-svgrepo-com.svg"
+      },
+      {
+        "id": 6,
+        "name": "Bootstrap",
+        "image": "/tech/bootstrap-icon.svg"
+      }
+    ]
+  },
+  {
+    "backend": [
+      {
+        "id": 0,
+        "name": "Node.js",
+        "image": "/tech/node-js-svgrepo-com.svg"
+      },
+      {
+        "id": 1,
+        "name": "Express.js",
+        "image": "/tech/Express.svg"
+      },
+      {
+        "id": 2,
+        "name": "SQL",
+        "image": "/tech/sql.svg"
+      },
+      {
+        "id": 3,
+        "name": "ASP.Net",
+        "image": "/tech/asp-net.svg"
+      },
+      {
+        "id": 4,
+        "name": "C#",
+        "image": "/tech/c-sharp.svg"
+      },
+      {
+        "id": 4,
+        "name": "Stripe",
+        "image": "/tech/stripe.svg"
+      },
+      {
+        "id": 5,
+        "name": "MongoDB",
+        "image": "/tech/mongoDB.svg"
+      }
+    ]
+  },
+  {
+    "other": [
+      {
+        "id": 0,
+        "name": "Github",
+        "image": "/tech/github.svg"
+      },
+      {
+        "id": 1,
+        "name": "npm",
+        "image": "/tech/npm-svgrepo-com.svg"
+      },
+
+      {
+        "id": 2,
+        "name": "yarn",
+        "image": "/tech/yarn.svg"
+      },
+      {
+        "id": 3,
+        "name": "AWS",
+        "image": "/tech/aws.svg"
+      },
+      {
+        "id": 4,
+        "name": "JWT",
+        "image": "/tech/jwt.svg"
+      },
+      {
+        "id": 6,
+        "name": "Trello",
+        "image": "/tech/trello.svg"
+      },
+      {
+        "id": 6,
+        "name": "Vite",
+        "image": "/tech/vite.svg"
+      }
+    ]
+  }
+]

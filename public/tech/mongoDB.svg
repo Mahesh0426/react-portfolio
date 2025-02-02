@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="16" fill="#47A248"/>
+
+  <!-- MongoDB Leaf -->
+  <path
+    fill="#FFFFFF"
+    d="M16 6C14 10 11 13 12 18c.5 2.5 2 4 3 5v4h2v-4c1-1 2.5-2.5 3-5 1-5-2-8-4-12z"
+  />
+</svg>

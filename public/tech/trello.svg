@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trello Blue Background -->
+  <rect x="0" y="0" width="32" height="32" fill="#0052CC"/>
+
+  <!-- Trello White Logo (Two Panels) -->
+  <rect x="7" y="7" width="8" height="18" rx="2" fill="white"/>
+  <rect x="17" y="7" width="8" height="10" rx="2" fill="white"/>
+</svg>

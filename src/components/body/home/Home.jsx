@@ -88,7 +88,7 @@ const Home = () => {
             onMouseLeave={handleMouseLeave}
           />
           <br />
-          <span className=" font-serif font-bold  pb-2 bg-gradient-to-r from-amber-200 to-rose-600 inline-block text-transparent bg-clip-text ">
+          <span className="   pb-2 bg-gradient-to-r from-amber-200 to-rose-600 inline-block text-transparent bg-clip-text ">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={JobArr}

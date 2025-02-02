@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Blue Background -->
+  <rect x="0" y="0" width="32" height="32" fill="#336791" />
+
+  <!-- Database Icon -->
+  <ellipse cx="16" cy="8" rx="10" ry="3" fill="#FFF" />
+  <path d="M6 8v12c0 1.5 4 3 10 3s10-1.5 10-3V8" fill="#FFF" />
+  <ellipse cx="16" cy="20" rx="10" ry="3" fill="#FFF" />
+
+  <!-- "SQL" Text -->
+  <text x="8" y="28" font-family="Arial, sans-serif" font-size="6" fill="white" font-weight="bold">
+    SQL
+  </text>
+</svg>
