@@ -1,0 +1,89 @@
+[
+  {
+    "id": 0,
+    "name": "Personalised E-learning Recommendation System",
+    "description": "An AI-powered learning platform that provides personalized course recommendations based on student performance, interests, and learning styles.",
+    "live": "https://www.gyanx.xyz/",
+    "tech": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "TensorFlow.js",
+      "Tailwind CSS",
+      "JTW-Token",
+      "nodemailer",
+      "Paypal-payment",
+      "vercel",
+      "render"
+    ],
+    "src": "project-image/e-RLS.png"
+  },
+  {
+    "id": 1,
+    "name": "E-commerce",
+    "description": "A full-stack e-commerce application with secure authentication, product management, cart functionality, and seamless checkout integration.",
+    "live": "https://waldo-1qf2.onrender.com/",
+    "repo": "https://github.com/katiegd/waldo",
+    "tech": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "stripe",
+      "Tailwindcss CSS",
+      "nodemailer",
+      "cloudinary",
+      "AWS"
+    ],
+    "src": "project-image/e-com.png"
+  },
+  {
+    "id": 2,
+    "name": "Real Estate Frontend",
+    "description": "A modern and responsive real estate website built with React, featuring smooth animations with Framer Motion and a seamless contact form using W3Form.",
+    "live": "https://your-realestate-site-link.com/",
+    "repo": "https://github.com/your-github-repo",
+    "tech": ["React", "Tailwind CSS", "Framer Motion", "W3Form"],
+    "src": "project-image/real_state.png"
+  },
+
+  {
+    "id": 3,
+    "name": "Finance Tracker App",
+    "description": "A simple and intuitive finance tracker that allows users to add, delete, and manage income and expenses, providing a clear overview of their financial status.",
+    "live": "https://your-finance-tracker-link.com/",
+    "repo": "https://github.com/your-github-repo",
+    "tech": ["React", "Node.js", "Express", "MongoDB", "Bcrypt", "EJS"],
+    "src": "project-image/finance_tracker.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Phone Directory",
+    "description": "A simple contact list application that allows users to save, manage, and delete contacts efficiently.",
+    "live": "https://your-phone-directory-link.com/",
+    "repo": "https://github.com/your-github-repo",
+    "tech": ["TypeScript", "Node.js", "Express.js", "MongoDB", "bootstrap"],
+    "src": "project-image/phone_directory.png"
+  },
+
+  {
+    "id": 5,
+    "name": "Contact List",
+    "description": "A frontend application that fetches data from a Contact API and displays a list of contacts in an intuitive and user-friendly interface.",
+    "live": "https://clinquant-toffee-8944a0.netlify.app/",
+    "repo": "https://github.com/katiegd/CV-Application",
+    "tech": ["React", "CSS", "HTML", "JavaScript"],
+    "src": "project-image/contact_list.png"
+  },
+
+  {
+    "id": 6,
+    "name": "Jaquette Storefront",
+    "description": "A small shopping app made with React as a part of the Odin Project curriculum. Uses routing, state, and various componenets to emulate a shopping experience for users on desktop, tablet, and mobile.",
+    "live": "https://jaquetteshop.netlify.app/shop",
+    "repo": "https://github.com/katiegd/shopping-cart",
+    "tech": ["React", "CSS"],
+    "src": "images/jaquette.png"
+  }
+]
