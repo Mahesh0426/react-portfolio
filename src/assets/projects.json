@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Personalised E-learning Recommendation System",
-    "description": "An AI-powered learning platform that provides personalized course recommendations based on student performance, interests, and learning styles.",
+    "description": "This project is an AI-powered learning platform designed to revolutionize the online education experience. It provides personalized course recommendations by analyzing student performance, interests, and learning styles. By leveraging advanced algorithms and machine learning models, the system continuously adapts to the evolving needs of each learner, ensuring that every recommendation is both relevant and timely.",
     "live": "https://www.gyanx.xyz/",
     "tech": [
       "React",
@@ -18,10 +18,11 @@
     ],
     "src": "project-image/e-RLS.png"
   },
+
   {
     "id": 1,
     "name": "E-commerce",
-    "description": "A full-stack e-commerce application with secure authentication, product management, cart functionality, and seamless checkout integration.",
+    "description": "This project is a comprehensive full-stack e-commerce application designed to deliver a secure and seamless shopping experience. It features robust authentication mechanisms that ensure user data is safely managed, while its efficient product management system allows for easy catalog updates and inventory tracking.  a seamless checkout process, integrated with payment gateways for secure transactions.",
     "live": "https://waldo-1qf2.onrender.com/",
     "repo": "https://github.com/katiegd/waldo",
     "tech": [
@@ -37,30 +38,48 @@
     ],
     "src": "project-image/e-com.png"
   },
+
   {
     "id": 2,
+    "name": "Library Management System",
+    "description": "A robust and user-friendly Library Management System designed to streamline book tracking, user management, and lending processes. Built with a modern tech stack, it offers a clean and responsive interface, efficient search and filter capabilities, and secure authentication to ensure smooth and secure library operations.",
+    "live": "https://your-library-management-system-link.com/",
+    "repo": "https://github.com/your-github-repo",
+    "tech": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "bootstrap",
+      "BcryptJs",
+      "JTW-Token",
+      "cloudinary"
+    ],
+    "src": "project-image/library_ms.png"
+  },
+
+  {
+    "id": 4,
     "name": "Real Estate Frontend",
-    "description": "A modern and responsive real estate website built with React, featuring smooth animations with Framer Motion and a seamless contact form using W3Form.",
+    "description": "This project is a modern and responsive real estate website built with React. It offers a sleek and intuitive user interface that makes property browsing effortless. The website incorporates smooth animations using Framer Motion to enhance the visual experience, and it includes a seamless contact form integrated via W3Form for easy communication with real estate agents.",
     "live": "https://your-realestate-site-link.com/",
     "repo": "https://github.com/your-github-repo",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "W3Form"],
     "src": "project-image/real_state.png"
   },
-
   {
-    "id": 3,
+    "id": 5,
     "name": "Finance Tracker App",
-    "description": "A simple and intuitive finance tracker that allows users to add, delete, and manage income and expenses, providing a clear overview of their financial status.",
+    "description": "The Finance Tracker App is a simple yet powerful tool designed to help users take control of their personal finances. It allows users to easily add, delete, and manage income and expense entries, providing a comprehensive overview of their financial status. With an intuitive and user-friendly interface, users can quickly log transactions, categorize their spending, and monitor their cash flow over time.",
     "live": "https://your-finance-tracker-link.com/",
     "repo": "https://github.com/your-github-repo",
     "tech": ["React", "Node.js", "Express", "MongoDB", "Bcrypt", "EJS"],
     "src": "project-image/finance_tracker.png"
   },
-
   {
-    "id": 4,
+    "id": 6,
     "name": "Phone Directory",
-    "description": "A simple contact list application that allows users to save, manage, and delete contacts efficiently.",
+    "description": "A simple contact list application that allows users to save, manage, and delete contacts efficiently. It features a clean and user-friendly interface that makes navigating and organizing contacts effortless.",
     "live": "https://your-phone-directory-link.com/",
     "repo": "https://github.com/your-github-repo",
     "tech": ["TypeScript", "Node.js", "Express.js", "MongoDB", "bootstrap"],
@@ -68,9 +87,9 @@
   },
 
   {
-    "id": 5,
+    "id": 7,
     "name": "Contact List",
-    "description": "A frontend application that fetches data from a Contact API and displays a list of contacts in an intuitive and user-friendly interface.",
+    "description": "A frontend application that fetches data from a Contact API and displays a list of contacts in an intuitive and user-friendly interface. It also offers dynamic search and filtering capabilities to help users quickly find the contacts they need.",
     "live": "https://clinquant-toffee-8944a0.netlify.app/",
     "repo": "https://github.com/katiegd/CV-Application",
     "tech": ["React", "CSS", "HTML", "JavaScript"],
@@ -78,7 +97,7 @@
   },
 
   {
-    "id": 6,
+    "id": 8,
     "name": "Jaquette Storefront",
     "description": "A small shopping app made with React as a part of the Odin Project curriculum. Uses routing, state, and various componenets to emulate a shopping experience for users on desktop, tablet, and mobile.",
     "live": "https://jaquetteshop.netlify.app/shop",

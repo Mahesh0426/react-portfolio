@@ -5,6 +5,8 @@ const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 4;
 
+  const [isExpanded, setIsExpanded] = useState({});
+
   // Calculate total pages
   const totalPages = Math.ceil(projects.length / projectsPerPage);
 
@@ -15,6 +17,20 @@ const Projects = () => {
     indexOfFirstProject,
     indexOfLastProject
   );
+  const paragrapStyle = {
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: "vertical",
+    overflow: "hidden",
+    display: "-webkit-box",
+  };
+
+  // Function to toggle expanded state for a specific project
+  const toggleExpanded = (projectId) => {
+    setIsExpanded((prevStates) => ({
+      ...prevStates,
+      [projectId]: !prevStates[projectId],
+    }));
+  };
 
   return (
     <div
@@ -62,7 +78,18 @@ const Projects = () => {
               <p className="font-bold text-xl text-amber-200 pt-2">
                 {project.name}
               </p>
-              <p className="text-slate-200">{project.description}</p>
+              <p
+                style={isExpanded[project.id] ? null : paragrapStyle}
+                className="text-slate-200"
+              >
+                {project.description}
+              </p>
+              <button
+                onClick={() => toggleExpanded(project.id)}
+                className=" hover:cursor-pointer text-end text-blue-600 "
+              >
+                {isExpanded[project.id] ? "read less.." : "read more..."}
+              </button>
               <div className="touch:block hidden text-slate-200">
                 <a
                   href={project.live}
