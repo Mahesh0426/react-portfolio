@@ -4,6 +4,7 @@
     "name": "Personalised E-learning Recommendation System",
     "description": "This project is an AI-powered learning platform designed to revolutionize the online education experience. It provides personalized course recommendations by analyzing student performance, interests, and learning styles. By leveraging advanced algorithms and machine learning models, the system continuously adapts to the evolving needs of each learner, ensuring that every recommendation is both relevant and timely.",
     "live": "https://www.gyanx.xyz/",
+    "repo": "https://github.com/Mahesh0426/Library_Management_System_FE",
     "tech": [
       "React",
       "Node.js",
@@ -23,8 +24,8 @@
     "id": 1,
     "name": "E-commerce",
     "description": "This project is a comprehensive full-stack e-commerce application designed to deliver a secure and seamless shopping experience. It features robust authentication mechanisms that ensure user data is safely managed, while its efficient product management system allows for easy catalog updates and inventory tracking.  a seamless checkout process, integrated with payment gateways for secure transactions.",
-    "live": "https://waldo-1qf2.onrender.com/",
-    "repo": "https://github.com/katiegd/waldo",
+    "live": "http://ecom-fronten.s3-website-ap-southeast-2.amazonaws.com/",
+    "repo": "https://github.com/Mahesh0426/ecom-client-buyer",
     "tech": [
       "React",
       "Node.js",
@@ -62,8 +63,8 @@
     "id": 4,
     "name": "Real Estate Frontend",
     "description": "This project is a modern and responsive real estate website built with React. It offers a sleek and intuitive user interface that makes property browsing effortless. The website incorporates smooth animations using Framer Motion to enhance the visual experience, and it includes a seamless contact form integrated via W3Form for easy communication with real estate agents.",
-    "live": "https://your-realestate-site-link.com/",
-    "repo": "https://github.com/your-github-repo",
+    "live": "https://real-state-2gswmb3xg-mahesh0426s-projects.vercel.app/",
+    "repo": "https://github.com/Mahesh0426/Real-state-app",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "W3Form"],
     "src": "project-image/real_state.png"
   },
@@ -72,7 +73,7 @@
     "name": "Finance Tracker App",
     "description": "The Finance Tracker App is a simple yet powerful tool designed to help users take control of their personal finances. It allows users to easily add, delete, and manage income and expense entries, providing a comprehensive overview of their financial status. With an intuitive and user-friendly interface, users can quickly log transactions, categorize their spending, and monitor their cash flow over time.",
     "live": "https://your-finance-tracker-link.com/",
-    "repo": "https://github.com/your-github-repo",
+    "repo": "https://github.com/Mahesh0426/Full_Stack_transaction_Tracker_-APP",
     "tech": ["React", "Node.js", "Express", "MongoDB", "Bcrypt", "EJS"],
     "src": "project-image/finance_tracker.png"
   },
@@ -80,8 +81,8 @@
     "id": 6,
     "name": "Phone Directory",
     "description": "A simple contact list application that allows users to save, manage, and delete contacts efficiently. It features a clean and user-friendly interface that makes navigating and organizing contacts effortless.",
-    "live": "https://your-phone-directory-link.com/",
-    "repo": "https://github.com/your-github-repo",
+    "live": "https://mahesh0426.github.io/Phone-directory/",
+    "repo": "https://github.com/Mahesh0426/Full_Stack_Phone-directory",
     "tech": ["TypeScript", "Node.js", "Express.js", "MongoDB", "bootstrap"],
     "src": "project-image/phone_directory.png"
   },
@@ -90,19 +91,19 @@
     "id": 7,
     "name": "Contact List",
     "description": "A frontend application that fetches data from a Contact API and displays a list of contacts in an intuitive and user-friendly interface. It also offers dynamic search and filtering capabilities to help users quickly find the contacts they need.",
-    "live": "https://clinquant-toffee-8944a0.netlify.app/",
-    "repo": "https://github.com/katiegd/CV-Application",
+    "live": "https://mahesh0426.github.io/contact_list/",
+    "repo": "https://github.com/Mahesh0426/contact_list",
     "tech": ["React", "CSS", "HTML", "JavaScript"],
     "src": "project-image/contact_list.png"
   },
 
   {
     "id": 8,
-    "name": "Jaquette Storefront",
-    "description": "A small shopping app made with React as a part of the Odin Project curriculum. Uses routing, state, and various componenets to emulate a shopping experience for users on desktop, tablet, and mobile.",
-    "live": "https://jaquetteshop.netlify.app/shop",
-    "repo": "https://github.com/katiegd/shopping-cart",
-    "tech": ["React", "CSS"],
-    "src": "images/jaquette.png"
+    "name": "not-to-do-list",
+    "description": "The Not-To-Do-List is a unique productivity-focused app built with Javascript, designed to help users track and avoid tasks they should not be doing. The app provides an engaging way to highlight counterproductive habits and encourages users to stay focused on their priorities.",
+    "live": "https://mahesh0426.github.io/react-NTDL/",
+    "repo": "https://github.com/Mahesh0426/not-to-do-list",
+    "tech": ["HTML", "CSS", "JavaScript", "Yarn", "Vite"],
+    "src": "project-image/ntdl.png"
   }
 ]

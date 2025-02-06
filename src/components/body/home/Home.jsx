@@ -8,7 +8,6 @@ import {
 } from "../../animations/AnimatedLetter";
 import TypeAnimation from "../../animations/TypeAnimation";
 import { FaDownload } from "react-icons/fa";
-import ProfilePictureUpDown from "./ProfilePictureUpDown";
 import hero from "../../../assets/myPicture.png";
 
 const Home = () => {
@@ -117,10 +116,11 @@ const Home = () => {
       </div>
 
       {/* <ProfilePictureUpDown /> */}
-      <div className="p-10 relative max-sm:p-2">
-        <div className="relative w-80 h-80 rounded-full bg-slate-900 overflow-hidden flex items-center justify-center shadow-lg">
+      <div className="p-10 relative max-sm:p-2 flex justify-center items-center">
+        <div className="relative w-80 h-80 rounded-full bg-slate-900 flex items-center justify-center shadow-lg ">
+          {/* Image positioned with bottom inside the circle */}
           <img
-            className="absolute inset-0 w-full h-full object-cover "
+            className="w-96 h-96 object-cover object-bottom rounded-full shadow-xl -mt-17"
             src={hero}
             alt="Hero"
           />
