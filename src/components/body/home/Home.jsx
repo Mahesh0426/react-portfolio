@@ -9,6 +9,7 @@ import {
 import TypeAnimation from "../../animations/TypeAnimation";
 import { FaDownload } from "react-icons/fa";
 import hero from "../../../assets/myPicture.png";
+import { motion } from "framer-motion";
 
 const Home = () => {
   // custom hook for animatted letters
@@ -87,16 +88,21 @@ const Home = () => {
             onMouseLeave={handleMouseLeave}
           />
           <br />
-          <span className="   pb-2 bg-gradient-to-r from-amber-200 to-rose-600 inline-block text-transparent bg-clip-text ">
+          <motion.span
+            className="pb-2 bg-gradient-to-r from-amber-200 to-rose-600 text-transparent bg-clip-text"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             <AnimatedLetters
               letterClass={letterClass}
               strArray={JobArr}
-              idx={17}
+              idx={14} // Ensures it appears earlier
               isHovering={isHovering}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />
-          </span>
+          </motion.span>
         </h1>
         <h1 className="text-8xl">
           {" "}
