@@ -66,7 +66,7 @@ const MobileDrawerSidebar = () => {
   // Variants for sliding the drawer in/out
   const drawerVariants = {
     hidden: { x: "-100%" },
-    visible: { x: 0 },
+    visible: { x: -5 },
   };
 
   return (
@@ -87,7 +87,7 @@ const MobileDrawerSidebar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed top-0 left-0 h-full z-50 bg-gray-700 text-white w-64"
+            className="fixed  top-60 left-0 h-70 z-50 bg-gray-600 text-white w-20"
             initial="hidden"
             animate="visible"
             exit="hidden"

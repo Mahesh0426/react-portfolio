@@ -32,11 +32,11 @@ const ParticlesBG = () => {
             type: "star",
           },
           number: {
-            value: 50,
+            value: 20,
           },
           opacity: {
             // each particle randomly between 0.3 and 0.8
-            value: { min: 0.3, max: 0.8 },
+            value: { min: 0.3, max: 0.4 },
           },
           size: {
             // each particle randomly between 1 and 8
