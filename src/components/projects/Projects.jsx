@@ -37,14 +37,21 @@ const Projects = () => {
       id="projects"
       className="mx-auto max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center "
     >
-      <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
+      <h2
+        data-aos="fade-right"
+        className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
+      >
         Projects
       </h2>
 
       {/* Projects Grid */}
       <div className="grid gap-5 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
         {currentProjects.map((project) => (
-          <div key={project.id} className="bg-slate-800 shadow sm:p-10 p-5">
+          <div
+            key={project.id}
+            data-aos="zoom-in"
+            className="bg-slate-800 shadow sm:p-10 p-5"
+          >
             {/* Image */}
             <div className="group relative overflow-hidden h-72">
               <img

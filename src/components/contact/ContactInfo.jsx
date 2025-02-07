@@ -5,7 +5,7 @@ import { MdLocationOn } from "react-icons/md";
 
 const ContactInfo = () => {
   return (
-    <div className="space-y-6 text-lg">
+    <div data-aos="fade-right" className="space-y-6 text-lg">
       <ContactItem
         icon={<BsFillTelephoneFill size={22} />}
         text="+61 0426182793"

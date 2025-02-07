@@ -9,9 +9,7 @@ const Footer = () => {
         {/* Left Section - Branding */}
         <div className="mb-4 md:mb-0">
           <h2 className="text-2xl font-bold">Mahesh Kunwar</h2>
-          <p className="text-gray-400">
-            Creating meaningful digital experiences
-          </p>
+          <p className="text-gray-400">Crafting impactful digital solutions</p>
         </div>
 
         {/* Middle Section - Navigation Links */}
@@ -28,7 +26,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Social Icons */}
-        <div className="flex space-x-6 text-xl">
+        <div data-aos="flip-down" className="flex space-x-6 text-xl">
           <a
             href="https://www.linkedin.com/in/mahesh-kunwar-1b85a5301/"
             target="_blank"

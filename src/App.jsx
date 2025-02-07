@@ -1,7 +1,5 @@
-import "./App.css";
 import AboutMe from "./components/about Me/about";
-// import ParticlesComponent from "./components/animations/ParticlesBG";
-
+import ParticlesBG from "./components/animations/ParticlesBG";
 import Home from "./components/body/home/Home";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/expericenc/experience";
@@ -11,16 +9,16 @@ import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scrollTop/ScrollTop";
 import Sidebar from "./components/sidebar/Sidebar";
 import Skills from "./components/Skills/Skills";
-import "./index.css";
 
 function App() {
   return (
-    <div className="first-line:home bg-slate-800 overflow-hidden relative min-h-screen">
-      {/* <ParticlesComponent /> */}
+    <div className="first-line:home bg-slate-800 overflow-hidden min-h-screen">
+      {/* Particles Background */}
+      <ParticlesBG />
+      {/* App Content */}
       <ScrollToTop />
-
       <Header />
-      <div className="html-Tags max-w-7xl mx-auto relative">
+      <div style={{ position: "relative", zIndex: 1, color: "#fff" }}>
         <Home />
         <Sidebar />
         <AboutMe />

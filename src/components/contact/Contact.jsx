@@ -9,7 +9,10 @@ function Contact() {
       id="contact"
       className="max-w-6xl mx-auto py-20 px-6 h-full relative text-white"
     >
-      <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
+      <h2
+        data-aos="fade-right"
+        className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
+      >
         Get in touch
       </h2>
       <div className="grid md:grid-cols-2 gap-12 items-center">

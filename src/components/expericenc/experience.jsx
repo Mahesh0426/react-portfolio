@@ -26,10 +26,13 @@ const Experience = () => {
       id="experience"
       className="max-w-7xl h-full mx-auto py-20 px-8 relative"
     >
-      <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
+      <h2
+        data-aos="fade-right"
+        className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
+      >
         Experience
       </h2>
-      <div className="flex flex-col">
+      <div data-aos="fade-left" tclassName="flex flex-col">
         {workExp.map((experience, index) => (
           <div
             key={index}

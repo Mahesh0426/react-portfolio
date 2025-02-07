@@ -9,12 +9,18 @@ function AboutMe() {
       id="about"
       className="max-w-7xl min-h-screen mx-auto py-20 px-8 flex flex-col justify-center items-center"
     >
-      <h2 className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]">
+      <h2
+        data-aos="fade-right"
+        className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
+      >
         About me
       </h2>
 
       {/* about me */}
-      <div className="flex flex-col md:flex-row items-center justify-center w-full">
+      <div
+        data-aos="slide-up"
+        className="flex flex-col md:flex-row items-center justify-center w-full"
+      >
         <div className="md:w-1/2 text-white">
           {/* summary section */}
           <div className="about-content flex flex-wrap items-center justify-center gap-y-4 mb-6">

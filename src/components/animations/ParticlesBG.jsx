@@ -1,95 +1,93 @@
 // ParticlesBG.jsx
-import React from "react";
-import Particles from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
+import React, { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
-const ParticlesComponent = (props) => {
-  // Callback to initialize the tsParticles engine
-  const particlesInit = async (engine) => {
-    // Load the slim package (or whichever package you need)
-    await loadSlim(engine);
-  };
+const ParticlesBG = () => {
+  const particlesInit = useCallback(async (engine) => {
+    console.log("Particles Engine Loaded:", engine);
+    await loadSlim(engine); // load the slim version
+  }, []);
 
-  // Callback fired once the particles container is loaded
-  const particlesLoaded = (container) => {
-    console.log("Particles container loaded:", container);
-  };
-
-  const options = {
-    background: {
-      color: {
-        value: "#1E2F97",
-      },
-    },
-    fpsLimit: 120,
-    interactivity: {
-      events: {
-        onClick: {
-          enable: true,
-          mode: "repulse",
-        },
-        onHover: {
-          enable: true,
-          mode: "grab",
-        },
-      },
-      modes: {
-        push: {
-          distance: 200,
-          duration: 15,
-        },
-        grab: {
-          distance: 150,
-        },
-      },
-    },
-    particles: {
-      color: { value: "#FFFFFF" },
-      links: {
-        color: "#FFFFFF",
-        distance: 150,
-        enable: true,
-        opacity: 0.3,
-        width: 1,
-      },
-      move: {
-        direction: "none",
-        enable: true,
-        outModes: {
-          default: "bounce",
-        },
-        random: true,
-        speed: 1,
-        straight: false,
-      },
-      number: {
-        density: {
-          enable: true,
-        },
-        value: 150,
-      },
-      opacity: {
-        value: 1.0,
-      },
-      shape: {
-        type: "circle",
-      },
-      size: {
-        value: { min: 1, max: 3 },
-      },
-    },
-    detectRetina: true,
-  };
+  const particlesLoaded = useCallback((container) => {
+    console.log("Particles Container Loaded:", container);
+  }, []);
 
   return (
     <Particles
-      id={props.id}
+      id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={options}
-      style={{ position: "absolute", top: 0, left: 0, zIndex: -1 }}
+      options={{
+        // Add a simple background gradient
+
+        fpsLimit: 60,
+
+        // Particle styles
+        particles: {
+          // Use an array for random colors
+          color: { value: ["#ff0000", "#00ff00", "#0000ff"] },
+          shape: {
+            // change shape from "circle" to "star"
+            type: "star",
+          },
+          number: {
+            value: 50,
+          },
+          opacity: {
+            // each particle randomly between 0.3 and 0.8
+            value: { min: 0.3, max: 0.8 },
+          },
+          size: {
+            // each particle randomly between 1 and 8
+            value: { min: 1, max: 8 },
+          },
+          move: {
+            enable: true,
+            speed: 2,
+          },
+          links: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+        },
+
+        // Interactivity
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "grab", // or "bubble", "grab", etc.
+            },
+            onClick: {
+              enable: true,
+              mode: "push",
+            },
+          },
+          modes: {
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              quantity: 4,
+            },
+          },
+        },
+
+        // Optimize for Retina Screens
+        detectRetina: true,
+      }}
+      style={{
+        // Make sure the canvas covers its parent container
+        width: "100%",
+        height: "100%",
+      }}
     />
   );
 };
 
-export default ParticlesComponent;
+export default ParticlesBG;

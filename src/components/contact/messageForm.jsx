@@ -51,6 +51,7 @@ export const MessageForm = () => {
 
   return (
     <form
+      data-aos="fade-left"
       onSubmit={handleSubmit}
       className="bg-gray-900 p-6 rounded-lg shadow-md w-full"
     >
