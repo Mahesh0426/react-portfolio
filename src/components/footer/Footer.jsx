@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Social Icons */}
-        <div data-aos="flip-down" className="flex space-x-6 text-xl">
+        <div className=" mt-4 flex space-x-6 text-xl">
           <a
             href="https://www.linkedin.com/in/mahesh-kunwar-1b85a5301/"
             target="_blank"
