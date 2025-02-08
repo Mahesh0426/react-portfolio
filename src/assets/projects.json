@@ -44,7 +44,7 @@
     "id": 2,
     "name": "Library Management System",
     "description": "A robust and user-friendly Library Management System designed to streamline book tracking, user management, and lending processes. Built with a modern tech stack, it offers a clean and responsive interface, efficient search and filter capabilities, and secure authentication to ensure smooth and secure library operations.",
-    "live": "https://your-library-management-system-link.com/",
+    "live": "https://library-management-system-fe-blue.vercel.app/",
     "repo": "https://github.com/your-github-repo",
     "tech": [
       "React",
