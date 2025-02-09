@@ -105,7 +105,7 @@ const Home = () => {
           <TypeAnimation />
         </h1>
         <a
-          href="/src//assets//resume.pdf"
+          href="/mahesh_resume.pdf"
           className="  btn-home border bg-yellow-300 border-blue-500 px-3 py-2 rounded-sm text-white-500 opacity-90
             hover:bg-blue-500 hover:text-white duration-300 active:scale-90"
           download
