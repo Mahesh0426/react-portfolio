@@ -88,21 +88,16 @@ const Home = () => {
             onMouseLeave={handleMouseLeave}
           />
           <br />
-          <motion.span
-            className="pb-2 bg-gradient-to-r from-amber-200 to-rose-600 text-transparent bg-clip-text"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-          >
+          <span className="pb-2   text-amber-400 ">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={JobArr}
-              idx={14} // Ensures it appears earlier
+              idx={17}
               isHovering={isHovering}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             />
-          </motion.span>
+          </span>
         </h1>
         <h1 className="text-8xl">
           {" "}

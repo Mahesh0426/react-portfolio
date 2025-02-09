@@ -66,12 +66,12 @@
         "image": "/tech/c-sharp.svg"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Stripe",
         "image": "/tech/stripe.svg"
       },
       {
-        "id": 5,
+        "id": 6,
         "name": "MongoDB",
         "image": "/tech/mongoDB.svg"
       }
@@ -106,7 +106,7 @@
         "image": "/tech/jwt.svg"
       },
       {
-        "id": 6,
+        "id": 5,
         "name": "Trello",
         "image": "/tech/trello.svg"
       },

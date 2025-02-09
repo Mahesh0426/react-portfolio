@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import projects from "../../assets/projects.json";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -37,19 +38,24 @@ const Projects = () => {
       id="projects"
       className="mx-auto max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center "
     >
-      <h2
-        data-aos="fade-right"
+      <motion.h2
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         Projects
-      </h2>
+      </motion.h2>
 
       {/* Projects Grid */}
       <div className="grid gap-5 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
         {currentProjects.map((project) => (
-          <div
-            key={project.id}
-            data-aos="zoom-in"
+          <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, ease: "easeIn" }}
+            viewport={{ once: false }}
             className="bg-slate-800 shadow sm:p-10 p-5"
           >
             {/* Image */}
@@ -125,7 +131,7 @@ const Projects = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

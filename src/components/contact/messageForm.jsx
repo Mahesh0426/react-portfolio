@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 
 export const MessageForm = () => {
   const [senderName, setSenderName] = useState("");
@@ -50,45 +51,51 @@ export const MessageForm = () => {
   };
 
   return (
-    <form
-      data-aos="fade-left"
-      onSubmit={handleSubmit}
-      className="bg-gray-900 p-6 rounded-lg shadow-md w-full"
+    <motion.div
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false }}
     >
-      <div className="mb-4">
-        <label className="block text-white mb-1">Your Name</label>
-        <input
-          type="text"
-          value={senderName}
-          onChange={(e) => setSenderName(e.target.value)}
-          className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-white mb-1">Your Email</label>
-        <input
-          type="email"
-          value={senderEmail}
-          onChange={(e) => setSenderEmail(e.target.value)}
-          className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
-        />
-      </div>
-      <div className="mb-4">
-        <label className="block text-white mb-1">Your Message</label>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          rows="5"
-          className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
-        ></textarea>
-      </div>
-      <button
-        type="submit"
-        className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition duration-300"
+      <form
+        onSubmit={handleSubmit}
+        className="bg-gray-900 p-6 rounded-lg shadow-md w-full"
       >
-        Send Message
-      </button>
-      <ToastContainer />
-    </form>
+        <div className="mb-4">
+          <label className="block text-white mb-1">Your Name</label>
+          <input
+            type="text"
+            value={senderName}
+            onChange={(e) => setSenderName(e.target.value)}
+            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-white mb-1">Your Email</label>
+          <input
+            type="email"
+            value={senderEmail}
+            onChange={(e) => setSenderEmail(e.target.value)}
+            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-white mb-1">Your Message</label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            rows="5"
+            className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg transition duration-300"
+        >
+          Send Message
+        </button>
+        <ToastContainer />
+      </form>
+    </motion.div>
   );
 };

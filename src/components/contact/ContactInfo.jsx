@@ -2,10 +2,17 @@ import React from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
 import { MdLocationOn } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const ContactInfo = () => {
   return (
-    <div data-aos="fade-right" className="space-y-6 text-lg">
+    <motion.div
+      initial={{ opacity: 0, x: -100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false }}
+      className="space-y-6 text-lg"
+    >
       <ContactItem
         icon={<BsFillTelephoneFill size={22} />}
         text="+61 0426182793"
@@ -21,7 +28,7 @@ const ContactInfo = () => {
         text="Sydney, NSW Australia"
         href="https://www.google.com/maps/place/Sydney,+NSW,+Australia"
       />
-    </div>
+    </motion.div>
   );
 };
 

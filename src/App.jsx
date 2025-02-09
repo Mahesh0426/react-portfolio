@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AboutMe from "./components/about Me/about";
 import ParticlesBG from "./components/animations/ParticlesBG";
 import Home from "./components/body/home/Home";

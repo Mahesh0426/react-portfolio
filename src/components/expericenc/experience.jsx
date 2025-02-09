@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../../assets/asset";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   const workExp = [
@@ -26,13 +27,23 @@ const Experience = () => {
       id="experience"
       className="max-w-7xl h-full mx-auto py-20 px-8 relative"
     >
-      <h2
-        data-aos="fade-right"
+      <motion.h2
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         Experience
-      </h2>
-      <div data-aos="fade-left" tclassName="flex flex-col">
+      </motion.h2>
+
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false }}
+        className="flex flex-col"
+      >
         {workExp.map((experience, index) => (
           <div
             key={index}
@@ -98,7 +109,7 @@ const Experience = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
