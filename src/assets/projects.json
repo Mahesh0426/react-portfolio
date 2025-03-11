@@ -63,7 +63,7 @@
     "id": 3,
     "name": "Real Estate Frontend",
     "description": "This project is a modern and responsive real estate website built with React. It offers a sleek and intuitive user interface that makes property browsing effortless. The website incorporates smooth animations using Framer Motion to enhance the visual experience, and it includes a seamless contact form integrated via W3Form for easy communication with real estate agents.",
-    "live": "https://real-state-2gswmb3xg-mahesh0426s-projects.vercel.app/",
+    "live": "https://real-state-app-three.vercel.app/",
     "repo": "https://github.com/Mahesh0426/Real-state-app",
     "tech": ["React", "Tailwind CSS", "Framer Motion", "W3Form"],
     "src": "project-image/real_state.png"
