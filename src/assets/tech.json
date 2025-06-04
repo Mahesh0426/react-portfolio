@@ -57,14 +57,10 @@
       },
       {
         "id": 3,
-        "name": "ASP.Net",
-        "image": "/tech/asp-net.svg"
+        "name": "Pyhton",
+        "image": "/tech/python.svg"
       },
-      {
-        "id": 4,
-        "name": "C#",
-        "image": "/tech/c-sharp.svg"
-      },
+
       {
         "id": 5,
         "name": "Stripe",

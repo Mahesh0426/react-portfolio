@@ -1,0 +1,59 @@
+[
+  {
+    "id": 0,
+    "title": "React: Components, Props, and State",
+    "description": "React is a popular JavaScript library for building user interfaces. It makes creating interactive and dynamic web applications easier by breaking the UI into reusable components. In this blog, we'll explore the core concepts of React: Components, Props, and State by providing examples to help you understand how they work together.",
+    "date": "March 15, 2024",
+    "readTime": "4 min read",
+    "tags": ["MERN Stack", "Web Development", "JavaScript"],
+    "link": "https://mahesh0426.hashnode.dev/react-components-props-and-state",
+    "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1746846459201/1727122f-b725-4e3f-bcd6-f8b46f8d4ac7.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  },
+  {
+    "id": 1,
+    "title": "Decode AI jargon",
+    "description": "To understand the power of modern AI, look at GPT (Generative Pre-trained Transformer) models. They can generate text that sounds like it was written by a person, starting from a given prompt. This article aims to explain the complicated terms behind these impressive AI tools using detailed explanations and practical examples.",
+    "date": "April 24, 2025",
+    "readTime": "7 min read",
+    "tags": ["AI,", "GPT", "ArtificialIntelligence", "lained "],
+    "link": "https://maheshkunwar.hashnode.dev/decode-ai-jargon",
+    "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1745378254196/e8c37c52-fcd1-470a-be72-7d5930fe7b3b.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  },
+  {
+    "id": 2,
+    "title": "Mastering Prompt Engineering : a beginner Guide",
+    "description": "A prompt is just a simple bit of text you type in to tell the AI what you want it to do . Think of it like giving instructions to a very smart assistant—the clearer you explain things, the better job they can do for you.",
+    "date": "April 28, 2025",
+    "readTime": "5 min read",
+    "tags": ["Prompt Engineering", "generative AI", "chatGPT", "AI basics"],
+    "link": "https://promptengineering-mahesh.hashnode.dev/mastering-prompt-engineering-a-beginner-guide",
+    "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1745716046088/22552ca4-3985-4f85-a8df-9694f440be0c.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  },
+  {
+    "id": 3,
+    "title": "AI Agents and Fine-Tuning in Generative AI: A Beginner’s Guide",
+    "description": "AI agents are systems that can perceive their environment and take actions to achieve specific goals. Fine-tuning is a process that involves taking a pre-trained model and making small adjustments to improve its performance on a specific task.",
+    "date": "May 2, 2025",
+    "readTime": "3 min read",
+    "tags": ["AI Agents", "Fine-Tuning", "Generative AI"],
+    "link": "https://ai-agents-and-fine-tuning.hashnode.dev/ai-agents-and-fine-tuning-in-generative-ai-a-beginners-guide",
+    "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1746145855962/23986413-0755-4db8-aae4-bdd83a6b803a.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  },
+  {
+    "id": 4,
+    "title": "RAG: A Beginner's Guide to Retrieval-Augmented Generation",
+    "description": "Retrieval-Augmented Generation (RAG) is a powerful approach that combines retrieval and generation techniques to improve the performance of AI models. This blog will introduce you to the key concepts of RAG, its architecture, and how it can be applied to various tasks.",
+    "date": "May 10, 2025",
+    "readTime": "3 min read",
+    "tags": [
+      "OpenAI",
+      "RAG",
+      "rag chatbot ",
+      "Langchain",
+      "Embedding models",
+      "llm"
+    ],
+    "link": "https://rag-a-beginner-guide.hashnode.dev/rag-a-beginners-guide-to-retrieval-augmented-generation",
+    "thumbnail": "https://cdn.hashnode.com/res/hashnode/image/upload/v1746773857722/a2027ef3-2178-4ecb-b8f5-f6b738d14eb9.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp"
+  }
+]

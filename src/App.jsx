@@ -10,6 +10,7 @@ import Projects from "./components/projects/Projects";
 import ScrollToTop from "./components/scrollTop/ScrollTop";
 import Sidebar from "./components/sidebar/Sidebar";
 import Skills from "./components/Skills/Skills";
+import Blog from "./components/My BLog/blog";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Experience />
         <Skills />
         <Projects />
+        <Blog />
         <Contact />
       </div>
       <Footer />

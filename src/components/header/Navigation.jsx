@@ -22,6 +22,7 @@ function Navigation() {
     { href: "skills", label: "Skills" },
     { href: "projects", label: "Projects" },
     { href: "contact", label: "Contact" },
+    { href: "blog", label: "My BLogs" },
   ];
 
   return (

@@ -29,7 +29,7 @@ const DrawerItem = ({ icon, label, href }) => (
 // Desktop version: always visible and expands on hover
 const DesktopSidebar = () => {
   return (
-    <div className="fixed top-1/4 left-0 z-50">
+    <div className="fixed top-20 left-0 z-50">
       <motion.div
         className="bg-gray-700 text-white w-16 h-auto flex flex-col items-center py-4 space-y-6 rounded-r-lg shadow-lg"
         initial={{ width: "4rem" }}
@@ -73,10 +73,10 @@ const MobileDrawerSidebar = () => {
     <>
       {/* Toggle button shown when drawer is closed */}
       {!isOpen && (
-        <div className="fixed top-1/2 left-0 transform -translate-y-1/2 z-50">
+        <div className="fixed top-20 left-0 z-50">
           <button
             onClick={toggleDrawer}
-            className=" bg-gray-700 text-white rounded-r-md focus:outline-none"
+            className="bg-gray-700 text-white rounded-r-md p-2 focus:outline-none"
           >
             <RiArrowRightWideLine size={20} />
           </button>
@@ -87,7 +87,7 @@ const MobileDrawerSidebar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed  top-60 left-0 h-70 z-50 bg-gray-600 text-white w-20"
+            className="fixed top-20 left-0 z-50 bg-gray-600 text-white w-48 rounded-r-lg shadow-lg"
             initial="hidden"
             animate="visible"
             exit="hidden"
@@ -95,15 +95,15 @@ const MobileDrawerSidebar = () => {
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
             {/* Close button at the top */}
-            <div className="flex justify-end p-4">
+            <div className="flex justify-end p-2">
               <button
                 onClick={toggleDrawer}
-                className="text-white focus:outline-none"
+                className="text-white focus:outline-none hover:bg-gray-500 rounded-full p-1"
               >
-                <FiX size={24} />
+                <FiX size={20} />
               </button>
             </div>
-            <div className="flex flex-col items-start space-y-4 p-4">
+            <div className="flex flex-col items-start space-y-2 p-2">
               <DrawerItem
                 icon={<FaLinkedin size={24} />}
                 label="LinkedIn"
