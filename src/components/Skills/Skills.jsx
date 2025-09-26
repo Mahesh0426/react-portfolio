@@ -2,6 +2,7 @@ import React from "react";
 import "../body/body.css";
 import tech from "../../assets/tech.json";
 import { motion } from "framer-motion";
+import CurrentlyLearning from "../Learning";
 
 const Skills = () => {
   return (
@@ -25,7 +26,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, rotateY: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: false }}
-        className="mt-10 mb-5 grid grid-cols-1 md:grid-cols-3 gap-8 px-4"
+        className="mt-10 mb-5 grid grid-cols-1 md:grid-cols-4 gap-8 px-4"
       >
         {/* Frontend Stack */}
         <div className="flex flex-col items-center gap-4">
@@ -61,7 +62,7 @@ const Skills = () => {
 
         {/* Misc Stack */}
         <div className="flex flex-col items-center gap-4">
-          <p className="text-2xl font-bold text-blue-500">Misc</p>
+          <p className="text-2xl font-bold text-blue-500">Tools</p>
           <div className="flex flex-col gap-3 w-full">
             {tech[2].other.map((item) => (
               <div
@@ -74,6 +75,9 @@ const Skills = () => {
             ))}
           </div>
         </div>
+
+        {/* Currently Learning  */}
+        <CurrentlyLearning tech={tech} />
       </motion.div>
     </div>
   );

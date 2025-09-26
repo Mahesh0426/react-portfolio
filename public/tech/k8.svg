@@ -1,0 +1,23 @@
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="16" cy="16" r="16" fill="#326CE5" />
+  
+  <!-- Main Ship Wheel Shape -->
+  <path fill="#FFFFFF" d="M16,6c5.5,0,10,4.5,10,10s-4.5,10-10,10S6,21.5,6,16S10.5,6,16,6z M16,8c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8
+    S20.4,8,16,8z"/>
+  
+  <!-- Center Circle -->
+  <circle fill="#FFFFFF" cx="16" cy="16" r="3"/>
+  
+  <!-- Spokes -->
+  <rect x="15" y="8" width="2" height="5" fill="#FFFFFF"/>
+  <rect x="15" y="19" width="2" height="5" fill="#FFFFFF"/>
+  <rect x="19" y="15" width="5" height="2" fill="#FFFFFF"/>
+  <rect x="8" y="15" width="5" height="2" fill="#FFFFFF"/>
+  
+  <!-- Diagonal Spokes -->
+  <rect x="18.5" y="9.5" width="2" height="5" transform="rotate(45 19.5 12)" fill="#FFFFFF"/>
+  <rect x="11.5" y="9.5" width="2" height="5" transform="rotate(-45 12.5 12)" fill="#FFFFFF"/>
+  <rect x="18.5" y="17.5" width="2" height="5" transform="rotate(-45 19.5 20)" fill="#FFFFFF"/>
+  <rect x="11.5" y="17.5" width="2" height="5" transform="rotate(45 12.5 20)" fill="#FFFFFF"/>
+</svg>

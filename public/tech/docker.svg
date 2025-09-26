@@ -1,0 +1,25 @@
+<svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#2496ED"/>
+  
+  <!-- Whale Body -->
+  <path fill="#0D7ACC" d="M24,16c0,4.4-3.6,8-8,8s-8-3.6-8-8s3.6-8,8-8S24,11.6,24,16z"/>
+  
+  <!-- Whale Tail -->
+  <path fill="#0D7ACC" d="M8,16c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S8,14.9,8,16z"/>
+  
+  <!-- Containers -->
+  <rect x="12" y="10" width="4" height="6" fill="#FFFFFF" rx="1"/>
+  <rect x="17" y="10" width="4" height="6" fill="#FFFFFF" rx="1"/>
+  <rect x="12" y="17" width="4" height="6" fill="#FFFFFF" rx="1"/>
+  <rect x="17" y="17" width="4" height="6" fill="#FFFFFF" rx="1"/>
+  
+  <!-- Container Details -->
+  <rect x="12.5" y="11" width="3" height="1" fill="#2496ED"/>
+  <rect x="17.5" y="11" width="3" height="1" fill="#2496ED"/>
+  <rect x="12.5" y="18" width="3" height="1" fill="#2496ED"/>
+  <rect x="17.5" y="18" width="3" height="1" fill="#2496ED"/>
+  
+  <!-- Whale Fin -->
+  <path fill="#0D7ACC" d="M22,12c0,1.1-0.9,2-2,2s-2-0.9-2-2s0.9-2,2-2S22,10.9,22,12z"/>
+</svg>

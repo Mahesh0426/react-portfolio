@@ -33,8 +33,8 @@
       },
       {
         "id": 6,
-        "name": "Bootstrap",
-        "image": "/tech/bootstrap-icon.svg"
+        "name": "Next.js",
+        "image": "/tech/nextJS.svg"
       }
     ]
   },
@@ -110,6 +110,36 @@
         "id": 6,
         "name": "Vite",
         "image": "/tech/vite.svg"
+      }
+    ]
+  },
+  {
+    "learning": [
+      {
+        "id": 0,
+        "name": "Docker",
+        "image": "/tech/docker.svg"
+      },
+      {
+        "id": 1,
+        "name": "kubernetes",
+        "image": "/tech/k8.svg"
+      },
+
+      {
+        "id": 2,
+        "name": "Generative AI",
+        "image": "/tech/genAi.svg"
+      },
+      {
+        "id": 3,
+        "name": "AI agents",
+        "image": "/tech/aws.svg"
+      },
+      {
+        "id": 4,
+        "name": "Rag",
+        "image": "/tech/jwt.svg"
       }
     ]
   }

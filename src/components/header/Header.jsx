@@ -13,7 +13,7 @@ function Header() {
             <span className="text-2xl mr-3 ml-2 text-amber-700 font-bold">
               |
             </span>
-            <span className="text-sm">soft. Engineer</span>
+            <span className="text-sm">Software Developer</span>
           </Link>
         </h1>
         {/* mavigation menus  */}
