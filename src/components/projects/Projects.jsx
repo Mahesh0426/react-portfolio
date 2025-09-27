@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import projects from "../../assets/projects.json";
 import { motion } from "framer-motion";
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 4;
-
   const [isExpanded, setIsExpanded] = useState({});
+  const projectsRef = useRef(null);
 
   // Calculate total pages
   const totalPages = Math.ceil(projects.length / projectsPerPage);
@@ -18,6 +18,7 @@ const Projects = () => {
     indexOfFirstProject,
     indexOfLastProject
   );
+
   const paragrapStyle = {
     WebkitLineClamp: 3,
     WebkitBoxOrient: "vertical",
@@ -25,7 +26,7 @@ const Projects = () => {
     display: "-webkit-box",
   };
 
-  // Function to toggle expanded state for a specific project
+  // Toggle expanded state
   const toggleExpanded = (projectId) => {
     setIsExpanded((prevStates) => ({
       ...prevStates,
@@ -33,9 +34,16 @@ const Projects = () => {
     }));
   };
 
+  // helper for pagination + scroll
+  const goToPage = (page) => {
+    setCurrentPage(page);
+    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div
       id="projects"
+      ref={projectsRef}
       className="mx-auto max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center "
     >
       <motion.h2
@@ -52,6 +60,7 @@ const Projects = () => {
       <div className="grid gap-5 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
         {currentProjects.map((project) => (
           <motion.div
+            key={project.id}
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeIn" }}
@@ -67,22 +76,23 @@ const Projects = () => {
               />
               {/* Hover */}
               <div className="absolute inset-0 flex items-center justify-center gap-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer">
-                <a
-                  href={project.live}
-                  className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
-                  target="_blank"
-                >
-                  Live
-                </a>
-                {project.repo && (
+                {project.live && (
                   <a
-                    href={project.repo}
+                    href={project.live}
                     className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
                     target="_blank"
                   >
-                    Repo
+                    Live
                   </a>
                 )}
+
+                <a
+                  href={project.repo}
+                  className="font-bold border-2 border-slate-100 hover:border-slate-50 hover:brightness-150 transition-all duration-500 ease-in-out text-slate-200 text-2xl bg-rose-900 px-5 py-1 rounded-xl"
+                  target="_blank"
+                >
+                  Repo
+                </a>
               </div>
             </div>
 
@@ -91,6 +101,25 @@ const Projects = () => {
               <p className="font-bold text-xl text-amber-200 pt-2">
                 {project.name}
               </p>
+              <div className=" flex items-center justify-center gap-5  cursor-pointer">
+                {project.live && (
+                  <a
+                    href={project.live}
+                    className="font-bold border-1 border-slate-100 hover:border-slate-50 hover:brightness-150  text-slate-200 text-1xl bg-rose-900 px-4  rounded-xl"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                )}
+
+                <a
+                  href={project.repo}
+                  className="font-bold border-1 border-slate-100 hover:border-slate-50 hover:brightness-150  text-slate-200 text-1xl bg-rose-900 px-4  rounded-xl"
+                  target="_blank"
+                >
+                  Repo
+                </a>
+              </div>
               <p
                 style={isExpanded[project.id] ? null : paragrapStyle}
                 className="text-slate-200"
@@ -104,14 +133,15 @@ const Projects = () => {
                 {isExpanded[project.id] ? "read less.." : "read more..."}
               </button>
               <div className="touch:block hidden text-slate-200">
-                <a
-                  href={project.live}
-                  className="font-black text-slate-200 underline"
-                  target="_blank"
-                >
-                  Live
-                </a>{" "}
-                /{" "}
+                {project.live && (
+                  <a
+                    href={project.live}
+                    className="font-black text-slate-200 underline"
+                    target="_blank"
+                  >
+                    Live
+                  </a>
+                )}
                 <a
                   href={project.repo}
                   className="font-black text-slate-200 underline"
@@ -138,7 +168,7 @@ const Projects = () => {
       {/* Pagination Controls */}
       <div className="flex justify-center mt-6 gap-3">
         <button
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+          onClick={() => goToPage(Math.max(currentPage - 1, 1))}
           disabled={currentPage === 1}
           className={`px-4 py-2 rounded-md text-white bg-rose-900 ${
             currentPage === 1
@@ -152,7 +182,7 @@ const Projects = () => {
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentPage(index + 1)}
+            onClick={() => goToPage(index + 1)}
             className={`px-4 py-2 rounded-md ${
               currentPage === index + 1
                 ? "bg-amber-500 text-black font-bold"
@@ -164,9 +194,7 @@ const Projects = () => {
         ))}
 
         <button
-          onClick={() =>
-            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-          }
+          onClick={() => goToPage(Math.min(currentPage + 1, totalPages))}
           disabled={currentPage === totalPages}
           className={`px-4 py-2 rounded-md text-white bg-rose-900 ${
             currentPage === totalPages

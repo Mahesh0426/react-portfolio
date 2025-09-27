@@ -8,16 +8,16 @@ const Experience = () => {
       icon: assets.RebbTechPhoto,
       companyName: "Rebb-Tech",
       startDate: "Nov 2024",
-      endDate: "Present",
+      endDate: "March 2025",
       position: "Full Stack Developer (internship)",
       description: `
         At Rebb-Tech, starting  my internship in  November 2024 as a full stack developer,  I have honed my expertise in building dynamic web applications using the MERN stack while working on scalable and efficient solutions.
         
         - Backend: Express.js, Node.js, JWT, Cookies, Middlewares (Joi, Auth), Cloudinary & Multer (File Uploads), Nodemailer (Emails), Passport.js, Stripe, Mongoose, MongoDB.
         
-        - Frontend: HTML5, CSS3, JavaScript, TypeScript, React, Redux, Bootstrap, React Router, Toastify, Axios, UI/UX Design, Google Fonts, FontAwesome.
+        - Frontend: HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Redux, Tailwind CSS, React Router, Axios, UI/UX Design, Shadcn/UI.
         
-        - Others: Git/GitHub, npm/yarn, Trello, Jira, Agile, AWS, Render, Vercel, Slack, Team Collaboration.
+        - Others: RESTful APIs DevOps: AWS (S3, Elastic Beanstalk) , CI/CD Pipelines , Git & Github , Agile/Scrum (ClickUp),  Professional Development Workflows
       `,
     },
   ];

@@ -106,7 +106,7 @@ const Home = () => {
         </h1>
         <a
           href="/mahesh_resume.pdf"
-          className="  btn-home border bg-yellow-300 border-blue-500 px-3 py-2 rounded-sm text-white-500 opacity-90
+          className="  btn-home border bg-blue-500 border-blue-700 px-3 py-2 rounded-2xl text-white-500 opacity-90
             hover:bg-blue-500 hover:text-white duration-300 active:scale-90"
           download
         >
