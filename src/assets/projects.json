@@ -89,11 +89,32 @@
   },
   {
     "id": 5,
+    "name": "STEM explores Club web app",
+    "description": "STEM Explores Club Web App – A college project built during a PHP group assignment. Kids aged 8–14 can ask questions, explore STEM, and get help via a built-in chatbot for support.",
+    "live": "https://group-project-koi.vercel.app/",
+    "repo": "https://github.com/Mahesh0426/Group-Project-KOI",
+    "tech": [
+      "React",
+      "axios",
+      "redux",
+      "Tailwindcss CSS",
+      "react-toastify",
+      "Shadcn/UI",
+      "Gemini API",
+      "PHP",
+      "vercel",
+      "wasmer"
+    ],
+    "src": "project-image/stem.png"
+  },
+  {
+    "id": 6,
     "name": "Storify App ",
     "description": "Storify is a cloud storage application inspired by Dropbox, allowing users to securely store, organize, and share files online. It supports folder management, media uploads, and seamless file access across devices. With an intuitive interface, users can collaborate easily, share links, and manage their files efficiently in real-time.",
     "repo": "https://github.com/Mahesh0426/Storify",
     "tech": [
       "Next.js",
+      "TypeScript",
       "Tailwindcss CSS",
       "Hero UI",
       "Clerk",
@@ -105,12 +126,13 @@
     "src": "project-image/storify.png"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Stack Overflow Clone",
     "description": "This application replicates the core functionality of Stack Overflow, allowing users to ask questions, provide answers, and engage in community-driven discussions. It features user authentication, upvoting and downvoting of posts, real-time updates, and an organized interface for browsing questions by tags and categories.",
-    "repo": "https://github.com/Mahesh0426/Persona-based-AI-Bot",
+    "repo": "https://github.com/Mahesh0426/Stack-Overflow-Clone",
     "tech": [
       "Next.js",
+      "TypeScript",
       "Tailwindcss CSS",
       "react-hot-toast",
       "Shadcn/UI",
@@ -120,7 +142,7 @@
   },
 
   {
-    "id": 7,
+    "id": 8,
     "name": "Library Management System",
     "description": "A robust and user-friendly Library Management System designed to streamline book tracking, user management, and lending processes. Built with a modern tech stack, it offers a clean and responsive interface, efficient search and filter capabilities, and secure authentication to ensure smooth and secure library operations.",
     "live": "https://library-management-system-fe-blue.vercel.app/",
@@ -139,7 +161,7 @@
   },
 
   {
-    "id": 8,
+    "id": 9,
     "name": "Real Estate Frontend",
     "description": "This project is a modern and responsive real estate website built with React. It offers a sleek and intuitive user interface that makes property browsing effortless. The website incorporates smooth animations using Framer Motion to enhance the visual experience, and it includes a seamless contact form integrated via W3Form for easy communication with real estate agents.",
     "live": "https://real-state-app-three.vercel.app/",
@@ -148,7 +170,7 @@
     "src": "project-image/real_state.png"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Finance Tracker App",
     "description": "The Finance Tracker App is a simple yet powerful tool designed to help users take control of their personal finances. It allows users to easily add, delete, and manage income and expense entries, providing a comprehensive overview of their financial status. With an intuitive and user-friendly interface, users can quickly log transactions, categorize their spending, and monitor their cash flow over time.",
     "live": "https://your-finance-tracker-link.com/",
@@ -157,7 +179,7 @@
     "src": "project-image/finance_tracker.png"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Phone Directory",
     "description": "A simple contact list application that allows users to save, manage, and delete contacts efficiently. It features a clean and user-friendly interface that makes navigating and organizing contacts effortless.",
     "live": "https://mahesh0426.github.io/Phone-directory/",
@@ -167,7 +189,7 @@
   },
 
   {
-    "id": 11,
+    "id": 12,
     "name": "Contact List",
     "description": "A frontend application that fetches data from a Contact API and displays a list of contacts in an intuitive and user-friendly interface. It also offers dynamic search and filtering capabilities to help users quickly find the contacts they need.",
     "live": "https://mahesh0426.github.io/contact_list/",
@@ -177,7 +199,7 @@
   },
 
   {
-    "id": 12,
+    "id": 13,
     "name": "not-to-do-list",
     "description": "The Not-To-Do-List is a unique productivity-focused app built with Javascript, designed to help users track and avoid tasks they should not be doing. The app provides an engaging way to highlight counterproductive habits and encourages users to stay focused on their priorities.",
     "live": "https://mahesh0426.github.io/react-NTDL/",
