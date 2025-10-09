@@ -1,5 +1,12 @@
 import React from "react";
-import { SiDocker, SiKubernetes, SiOpenai, SiTrello } from "react-icons/si";
+
+import {
+  SiDocker,
+  SiKubernetes,
+  SiNginx,
+  SiOpenai,
+  SiTrello,
+} from "react-icons/si";
 
 const iconMap = {
   Docker: <SiDocker size={40} color="#2496ED" />,
@@ -7,6 +14,7 @@ const iconMap = {
   "Generative AI": <SiOpenai size={40} color="#412991" />,
   "AI agents": <SiOpenai size={40} color="#412991" />,
   Rag: <SiTrello size={40} color="#0052CC" />,
+  Nginx: <SiNginx size={40} color="#009639" />,
 };
 
 const CurrentlyLearning = ({ tech }) => {

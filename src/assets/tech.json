@@ -140,6 +140,11 @@
         "id": 4,
         "name": "Rag",
         "image": "/tech/jwt.svg"
+      },
+      {
+        "id": 5,
+        "name": "Nginx",
+        "image": "/tech/nginx.svg"
       }
     ]
   }

@@ -110,7 +110,7 @@ const Home = () => {
             hover:bg-blue-500 hover:text-white duration-300 active:scale-90"
           download
         >
-          <button className="flex justify-center items-center gap-2">
+          <button className="flex justify-center items-center gap-2 cursor-pointer">
             download Resume <FaDownload />
           </button>
         </a>
