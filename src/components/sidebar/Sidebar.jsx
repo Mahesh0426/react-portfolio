@@ -107,7 +107,7 @@ const MobileDrawerSidebar = () => {
               <DrawerItem
                 icon={<FaLinkedin size={24} />}
                 label="LinkedIn"
-                href="https://www.linkedin.com/in/mahesh-kunwar-1b85a5301/"
+                href="https://www.linkedin.com/in/mahesh-kunwar/"
               />
               <DrawerItem
                 icon={<FaGithub size={24} />}

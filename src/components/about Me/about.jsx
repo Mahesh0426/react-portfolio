@@ -63,31 +63,37 @@ function AboutMe() {
               <small className=" text-blue-500">10+</small>
             </div>
           </div>
-
           {/* about me in details  */}
           <p className="mb-4 text-center md:text-left">
-            I am{" "}
-            <a href="#" className="text-blue-500">
-              Mahesh Kunwar
-            </a>
-            , a dedicated web developer specializing in the MERN stack—MongoDB,
-            Express.js, React.js, and Node.js. Passionate about creating
-            user-friendly and efficient applications, I enjoy solving complex
-            problems through clean and scalable code. My journey in web
-            development has been shaped by hands-on projects that have enhanced
-            my problem-solving skills and deepened my technical expertise.
-          </p>
-
+            {" "}
+            Hi, I’m <span className="text-blue-500">Mahesh Kunwar</span>. I’m a
+            full-stack developer and GenAI enthusiast who focuses on building
+            scalable, well-structured products that deliver a smooth and
+            reliable user experience. I work with TypeScript, React, Express,
+            MongoDB, Python and modern AI tools like openAI SDK, langchain,
+            langGraph to turn ideas into practical, high-quality software.{" "}
+          </p>{" "}
           <p className="mb-4 text-center md:text-left">
-            With a dynamic mindset and a strong enthusiasm for technology, I am
-            always eager to learn new technologies and adapt to emerging trends
-            in the fast-evolving tech landscape. A quick learner, I thrive in
-            collaborative environments, constantly seeking opportunities to
-            contribute, grow, and innovate. My goal is to leverage my skills to
-            develop impactful software solutions that enhance user experiences
-            and drive meaningful progress.
+            {" "}
+            I’m always eager to learn and constantly exploring new tech. I enjoy
+            building things from the ground up and improving through hands-on
+            projects. Recently I’ve created a persona-based AI system, a
+            chat-with-YouTube video tool, a CLI website cloner and a mini cursor
+            project. These projects help me refine my thinking, experiment with
+            new tools and understand how systems work behind the scenes.{" "}
+          </p>{" "}
+          <p className="mb-4 text-center md:text-left">
+            {" "}
+            My background in Information Technology shapes how I approach
+            development. I focus on clean architecture, practical automation and
+            solutions that can grow over time. I learn quickly, adapt well and
+            enjoy contributing to products that aim to make a real impact.{" "}
+          </p>{" "}
+          <p className="mb-4 text-center md:text-left">
+            {" "}
+            I’m always open to new opportunities and collaborations, so feel
+            free to connect with me.{" "}
           </p>
-
           {/* lets connect button */}
           <div className="flex justify-center items-center w-full mb-4">
             <a href="#contact">
