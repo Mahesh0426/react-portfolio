@@ -61,7 +61,7 @@ const Home = () => {
       id="home"
       className="relative mt-[14vh] max-w-7xl h-full mx-auto flex justify-between max-md:justify-center gap-3 items-center my-5 py-20 max-md:pb-0 px-8 max-md:gap-8 max-md:flex-wrap"
     >
-      <div className="p-6 max-sm:p-3 flex flex-col items-start gap-4">
+      <div className="p-12 max-sm:p-3 flex flex-col items-start gap-4">
         <h1 className="font-extrabold text-5xl max-lg:text-4xl max-sm:text-4xl mb-3 leading-snug text-white opacity-90 relative">
           <AnimatedLetters
             letterClass={letterClass}
