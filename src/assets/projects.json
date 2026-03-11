@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Personalised E-learning Recommendation System",
-    "description": "This project is an AI-powered learning platform designed to revolutionize the online education experience. It provides personalized course recommendations by analyzing student performance, interests, and learning styles. By leveraging advanced algorithms and machine learning models, the system continuously adapts to the evolving needs of each learner, ensuring that every recommendation is both relevant and timely.",
+    "description": "This project is an learning platform designed to revolutionize the online education experience and make it more interactive and engaging. It provides personalized course recommendations by analyzing student performance, interests, and learning styles. By leveraging advanced algorithms and machine learning models, the system continuously adapts to the evolving needs of each learner, ensuring that every recommendation is both relevant and timely.",
     "live": "https://www.gyanx.xyz/",
     "repo": "https://github.com/Mahesh0426/fronten-E-lms",
     "tech": [
