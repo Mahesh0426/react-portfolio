@@ -4,7 +4,7 @@ This is my personal portfolio website built using **React**, **Tailwind CSS**, a
 
 ## Live Demo
 
-Check out the live site here: [maheshkunwar.com.np](https://www.maheshkunwar.com.np/)
+Check out the live site here: [maheshkunwar.com.np](https://www.maheshkunwar.dev/)
 
 ## Features
 
