@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Personalised E-learning Recommendation System",
     "description": "This project is an learning platform designed to revolutionize the online education experience and make it more interactive and engaging. It provides personalized course recommendations by analyzing student performance, interests, and learning styles. By leveraging advanced algorithms and machine learning models, the system continuously adapts to the evolving needs of each learner, ensuring that every recommendation is both relevant and timely.",
-    "live": "https://www.gyanx.xyz/",
+    "live": "http://72.61.125.129:5174/",
     "repo": "https://github.com/Mahesh0426/fronten-E-lms",
     "tech": [
       "React",
@@ -11,11 +11,13 @@
       "MongoDB",
       "TensorFlow.js",
       "Tailwind CSS",
-      "JTW-Token",
+      "JWT-Token",
       "Nodemailer",
       "Paypal-payment",
-      "Vercel",
-      "Render"
+      "VPS",
+      "Docker",
+      "Github actions",
+      "Nginx"
     ],
     "src": "project-image/e-RLS.png"
   },
@@ -39,31 +41,37 @@
     ],
     "src": "project-image/AI_thumbnail.png"
   },
-
   {
     "id": 2,
-    "name": "E-commerce",
-    "description": "This project is a full-stack e-commerce application built to provide a modern, secure, and engaging shopping experience. Users can browse products with rich descriptions and images, manage their shopping cart and wishlist, and apply coupon codes at checkout for instant discounts. The app integrates Stripe for safe and reliable payments, while customers can track their purchases through a detailed order history with real-time status updates. An AI-powered chatbot is available for instant support, making the shopping journey more interactive. The platform features a clean, responsive interface that ensures a smooth experience across all devices.",
-    "live": "https://fitaura.dineshbudhathoki.com/",
-    "repo": "https://github.com/Mahesh0426/Ecom-Client-FE",
+    "name": "Real Time Chat Application",
+    "description": "This real-time chat application delivers a seamless messaging experience, similar to popular platforms like Messenger. Users can engage in one-on-one or group conversations with instant delivery, typing indicators, and read receipts. The app supports secure authentication, smooth media sharing, and a responsive interface for all devices.",
+    "repo": "https://github.com/Mahesh0426/Persona-based-AI-Bot",
+    "live": "http://72.61.125.129:5175/",
     "tech": [
       "React",
-      "Node.js",
-      "Express",
+      "node.js",
       "MongoDB",
-      "Stripe",
+      "socket.io",
       "Tailwindcss CSS",
-      "Shadcn/UI",
-      "Nodemailer",
-      "Cloudinary",
-      "AWS",
+      "ExpressJS",
+      "VPS",
       "Docker",
-      "Gemini API"
+      "Github actions"
     ],
-    "src": "project-image/fitaura app.png"
+    "src": "project-image/chatApp.png"
   },
   {
     "id": 3,
+    "name": "Persona Based AI Bot",
+    "description": "A modern React application that leverages Google's Generative AI to create personalized AI experiences.",
+    "live": "https://persona-based-ai-bot.vercel.app/",
+    "repo": "https://github.com/Mahesh0426/Persona-based-AI-Bot",
+    "tech": ["React", "Gemini API", "Tailwindcss CSS", "vite"],
+    "src": "project-image/ai-bot.png"
+  },
+
+  {
+    "id": 4,
     "name": "E-commerce admin",
     "description": "This project is a comprehensive full-stack e-commerce application designed to deliver a secure and seamless shopping experience. It features robust authentication mechanisms that ensure user data is safely managed, while its efficient product management system allows for easy catalog updates and inventory tracking.  a seamless checkout process, integrated with payment gateways for secure transactions.",
     "live": "http://mahesh-fronted.s3-website-ap-southeast-2.amazonaws.com/",
@@ -84,29 +92,28 @@
     "src": "project-image/fitaura admin.png"
   },
   {
-    "id": 4,
-    "name": "Persona Based AI Bot",
-    "description": "A modern React application that leverages Google's Generative AI to create personalized AI experiences.",
-    "live": "https://persona-based-ai-bot.vercel.app/",
-    "repo": "https://github.com/Mahesh0426/Persona-based-AI-Bot",
-    "tech": ["React", "Gemini API", "Tailwindcss CSS", "vite"],
-    "src": "project-image/ai-bot.png"
-  },
-  {
     "id": 5,
-    "name": "Real Time Chat Application",
-    "description": "This real-time chat application delivers a seamless messaging experience, similar to popular platforms like Messenger. Users can engage in one-on-one or group conversations with instant delivery, typing indicators, and read receipts. The app supports secure authentication, smooth media sharing, and a responsive interface for all devices.",
-    "repo": "https://github.com/Mahesh0426/Persona-based-AI-Bot",
+    "name": "E-commerce",
+    "description": "This project is a full-stack e-commerce application built to provide a modern, secure, and engaging shopping experience. Users can browse products with rich descriptions and images, manage their shopping cart and wishlist, and apply coupon codes at checkout for instant discounts. The app integrates Stripe for safe and reliable payments, while customers can track their purchases through a detailed order history with real-time status updates. An AI-powered chatbot is available for instant support, making the shopping journey more interactive. The platform features a clean, responsive interface that ensures a smooth experience across all devices.",
+    "live": "https://fitaura.dineshbudhathoki.com/",
+    "repo": "https://github.com/Mahesh0426/Ecom-Client-FE",
     "tech": [
       "React",
-      "node.js",
+      "Node.js",
+      "Express",
       "MongoDB",
-      "socket.io",
+      "Stripe",
       "Tailwindcss CSS",
-      "vite"
+      "Shadcn/UI",
+      "Nodemailer",
+      "Cloudinary",
+      "AWS",
+      "Docker",
+      "Gemini API"
     ],
-    "src": "project-image/chatApp.png"
+    "src": "project-image/fitaura app.png"
   },
+
   {
     "id": 6,
     "name": "STEM explores Club web app",
