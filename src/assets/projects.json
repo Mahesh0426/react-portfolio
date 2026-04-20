@@ -49,7 +49,7 @@
     "live": "http://72.61.125.129:5175/",
     "tech": [
       "React",
-      "node.js",
+      "NodeJS",
       "MongoDB",
       "socket.io",
       "Tailwindcss CSS",

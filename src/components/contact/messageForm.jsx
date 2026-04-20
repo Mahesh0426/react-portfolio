@@ -55,7 +55,7 @@ export const MessageForm = () => {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
     >
       <form
         onSubmit={handleSubmit}

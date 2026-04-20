@@ -10,7 +10,7 @@ const ContactInfo = () => {
       initial={{ opacity: 0, x: -100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
       className="space-y-6 text-lg"
     >
       <ContactItem

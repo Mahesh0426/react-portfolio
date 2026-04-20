@@ -31,17 +31,17 @@ const Experience = () => {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         Experience
       </motion.h2>
 
       <motion.div
-        initial={{ opacity: 0, x: 100 }}
+        initial={false}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className="flex flex-col"
       >
         {workExp.map((experience, index) => (

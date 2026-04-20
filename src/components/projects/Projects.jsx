@@ -50,7 +50,7 @@ const Projects = () => {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         Projects
@@ -64,7 +64,7 @@ const Projects = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeIn" }}
-            viewport={{ once: false }}
+            viewport={{ once: true }}
             className="bg-slate-800 shadow sm:p-10 p-5"
           >
             {/* Image */}

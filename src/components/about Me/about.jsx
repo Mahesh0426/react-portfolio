@@ -11,10 +11,10 @@ function AboutMe() {
       className="max-w-7xl min-h-screen mx-auto py-20 px-8 flex flex-col justify-center items-center"
     >
       <motion.h2
-        initial={{ opacity: 0, x: -100 }}
+        initial={false}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         About me
@@ -22,10 +22,10 @@ function AboutMe() {
 
       {/* about me */}
       <motion.div
-        initial={{ opacity: 0, y: 100 }}
+        initial={false}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         className="flex flex-col md:flex-row items-center justify-center w-full"
       >
         <div className="md:w-1/2 text-white">
