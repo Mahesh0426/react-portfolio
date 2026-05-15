@@ -16,7 +16,7 @@ const Projects = () => {
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projects.slice(
     indexOfFirstProject,
-    indexOfLastProject
+    indexOfLastProject,
   );
 
   const paragrapStyle = {
@@ -57,7 +57,7 @@ const Projects = () => {
       </motion.h2>
 
       {/* Projects Grid */}
-      <div className="grid gap-5 md:grid-cols-2 grid-cols-1 sm:max-w-5xl animate-fade duration-2000 delay-1000">
+      <div className=" grid gap-5 md:grid-cols-2 grid-cols-1 sm:max-w-5xl ">
         {currentProjects.map((project) => (
           <motion.div
             key={project.id}

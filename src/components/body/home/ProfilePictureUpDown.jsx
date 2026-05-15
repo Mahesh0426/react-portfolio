@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import logoProgLang from "../../arrays/logoProgLang";
 import "./home.css";
-import hero from "../../../assets/myPicture.png";
+import hero from "../../../assets/profilePicture.jpg";
 // import FloatingAnimation from "../../animations/FloatingAnimation";
 
 function ProfilePictureUpDown() {
@@ -9,9 +9,9 @@ function ProfilePictureUpDown() {
 
   return (
     <div className="p-10 relative max-sm:p-2">
-      <div className="relative w-80 h-80 rounded-full bg-slate-900 overflow-hidden flex items-center justify-center shadow-lg">
+      <div className="relative w-100 h-100 rounded-full bg-slate-900 overflow-hidden flex items-center justify-center shadow-lg">
         <img
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover rounded-full"
           src={hero}
           alt="Hero"
         />

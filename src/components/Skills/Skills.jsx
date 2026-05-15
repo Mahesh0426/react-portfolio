@@ -11,10 +11,10 @@ const Skills = () => {
       className="mx-auto  max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center "
     >
       <motion.h2
-        initial={false}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         className="text-4xl md:text-6xl font-serif font-bold tracking-tight pb-2 sm:pb-6 text-amber-200/[.98]"
       >
         Tools
@@ -22,7 +22,7 @@ const Skills = () => {
 
       {/* tech stack  */}
       <motion.div
-        initial={{ opacity: 0, rotateY: 180 }}
+        initial={false}
         whileInView={{ opacity: 1, rotateY: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
         viewport={{ once: true }}

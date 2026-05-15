@@ -25,7 +25,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="max-w-7xl h-full mx-auto py-20 px-8 relative"
+      className="max-w-7xl h-full mx-auto py-20 px-14 relative "
     >
       <motion.h2
         initial={{ opacity: 0, x: -100 }}

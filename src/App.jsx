@@ -11,6 +11,7 @@ import ScrollToTop from "./components/scrollTop/ScrollTop";
 import Sidebar from "./components/sidebar/Sidebar";
 import Skills from "./components/Skills/Skills";
 import Blog from "./components/My BLog/blog";
+import ChatBot from "./components/chatBot/ChatBot";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       {/* Particles Background */}
       <ParticlesBG />
       {/* App Content */}
+      <ChatBot />
       <ScrollToTop />
       <Header />
       <div style={{ position: "relative", zIndex: 1, color: "#fff" }}>

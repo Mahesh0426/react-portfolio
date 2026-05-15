@@ -35,7 +35,7 @@ export default function ScrollToTop() {
           onClick={backToTop}
           className={` ${
             showButton ? `inline-block` : `hidden`
-          } fixed bottom-[20px] right-[20px] z-50 p-3 bg-amber-200 text-slate-800 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose-500 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
+          } fixed bottom-[20px] left-[20px] z-50 p-3 bg-amber-200 text-slate-800 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-rose-500 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out`}
         >
           <svg
             aria-hidden="true"

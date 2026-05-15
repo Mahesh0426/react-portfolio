@@ -32,7 +32,7 @@ const Blog = () => {
       className="mx-auto mt-6 max-w-7xl px-2 lg:px-8 flex flex-col sm:items-center relative"
     >
       <motion.h2
-        initial={{ opacity: 0, x: -100 }}
+        initial={false}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
@@ -67,7 +67,7 @@ const Blog = () => {
           {reversedBlogs.map((blog) => (
             <motion.div
               key={blog.id}
-              initial={{ opacity: 0, scale: 0.5 }}
+              initial={false}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, ease: "easeIn" }}
               viewport={{ once: true }}
