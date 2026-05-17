@@ -4,18 +4,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import chatbotIcon from "../../assets/profilePicture.jpg";
 import { CgClose } from "react-icons/cg";
 import { IoSend } from "react-icons/io5";
+import { FaMicrophone } from "react-icons/fa";
 import { getResponseStream } from "./prompt";
 
 function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
-  // Format time helper
-  const formatTime = (date) => {
-    return new Date(date).toLocaleTimeString([], {
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  };
+  const [inputValue, setInputValue] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
+  const messagesEndRef = useRef(null);
+  const [isRecording, setIsRecording] = useState(false);
+  const [recognition, setRecognition] = useState(null);
+  const originalInputRef = useRef("");
 
+  // Initialize messages state after hooks are declared
   const [messages, setMessages] = useState([
     {
       id: 1,
@@ -24,9 +25,14 @@ function ChatBot() {
       time: Date.now(),
     },
   ]);
-  const [inputValue, setInputValue] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
-  const messagesEndRef = useRef(null);
+
+  // Format time helper
+  const formatTime = (date) => {
+    return new Date(date).toLocaleTimeString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
+  };
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -78,12 +84,18 @@ function ChatBot() {
     };
   }, [isOpen]);
 
+  // Scroll to bottom when messages update
   useEffect(() => {
     scrollToBottom();
   }, [messages, isTyping]);
 
   const handleSend = async () => {
     if (!inputValue.trim()) return;
+
+    if (isRecording && recognition) {
+      recognition.stop();
+      setIsRecording(false);
+    }
 
     const userMsg = {
       id: Date.now(),
@@ -96,6 +108,7 @@ function ChatBot() {
 
     setMessages((prev) => [...prev, userMsg]);
     setInputValue("");
+    originalInputRef.current = "";
     setIsTyping(true);
 
     try {
@@ -116,14 +129,14 @@ function ChatBot() {
           // Reveal 1-3 characters at a time for natural feel
           const charsToAdd = Math.min(
             Math.ceil(Math.random() * 2) + 1,
-            fullBuffer.length - displayedLength
+            fullBuffer.length - displayedLength,
           );
           displayedLength += charsToAdd;
           const visibleText = fullBuffer.slice(0, displayedLength);
           setMessages((prev) =>
             prev.map((msg) =>
-              msg.id === botMsgId ? { ...msg, text: visibleText } : msg
-            )
+              msg.id === botMsgId ? { ...msg, text: visibleText } : msg,
+            ),
           );
         } else if (streamDone) {
           clearInterval(renderInterval);
@@ -152,6 +165,60 @@ function ChatBot() {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter") handleSend();
+  };
+
+  // Initialize Speech Recognition
+  useEffect(() => {
+    const SpeechRecognition =
+      window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      const recog = new SpeechRecognition();
+      recog.continuous = false;
+      recog.interimResults = true;
+      recog.lang = "en-US";
+
+      recog.onresult = (event) => {
+        const transcript = Array.from(event.results)
+          .map((result) => result[0])
+          .map((result) => result.transcript)
+          .join("");
+
+        const previousText = originalInputRef.current;
+        setInputValue(
+          previousText ? previousText + " " + transcript : transcript,
+        );
+      };
+
+      recog.onend = () => {
+        setIsRecording(false);
+      };
+
+      recog.onerror = (event) => {
+        console.error("Speech recognition error:", event.error);
+        setIsRecording(false);
+      };
+
+      setRecognition(recog);
+    } else {
+      console.warn("Speech Recognition is not supported in this browser.");
+    }
+  }, []);
+
+  // Toggle speech recognition
+  const toggleRecording = () => {
+    if (!recognition) {
+      alert("Speech Recognition is not supported in this browser.");
+      return;
+    }
+
+    if (isRecording) {
+      recognition.stop();
+      setIsRecording(false);
+    } else {
+      originalInputRef.current = inputValue;
+      recognition.start();
+      setIsRecording(true);
+    }
   };
 
   return (
@@ -224,7 +291,9 @@ function ChatBot() {
                           : "bg-slate-700/80 text-slate-200 rounded-bl-sm border border-slate-600/30"
                       }`}
                     >
-                      {msg.type === "bot" ? renderMessageText(msg.text) : msg.text}
+                      {msg.type === "bot"
+                        ? renderMessageText(msg.text)
+                        : msg.text}
                     </div>
                     <span className="text-[10px] text-slate-500 mt-1 px-1">
                       {formatTime(msg.time)}
@@ -283,9 +352,21 @@ function ChatBot() {
             </div>
 
             {/* Input - fixed at bottom */}
-            <div className="flex-shrink-0 bg-gradient-to-t from-slate-900 via-slate-800/95 to-slate-800/80 backdrop-blur-md border-t border-slate-700/50">
-              <div className="px-3 py-2">
-                <div className="flex items-center gap-2 bg-slate-700/40 border border-slate-600/40 rounded-2xl px-2 py-1.5 focus-within:border-amber-500/40 focus-within:shadow-[0_0_12px_rgba(245,158,11,0.08)] transition-all duration-300">
+            <div className="bg-gradient-to-t from-slate-900 via-slate-800/95 to-slate-800/80 backdrop-blur-md border-t border-slate-700/50">
+              <div className="px-3 py-2 flex items-center">
+                {/* Mic Button - positioned on the right */}
+                <button
+                  onClick={toggleRecording}
+                  className="p-2 text-slate-400 hover:text-amber-400 transition-colors"
+                  title={isRecording ? "Stop speaking" : "click to `Speak"}
+                >
+                  {isRecording ? (
+                    <FaMicrophone className="w-4 h-4 animate-pulse" />
+                  ) : (
+                    <FaMicrophone className="w-4 h-4" />
+                  )}
+                </button>
+                <div className="flex-1 w-full flex items-center gap-2 bg-slate-700/40 border border-slate-600/40 rounded-2xl px-2 py-1.5 focus-within:border-amber-500/40 focus-within:shadow-[0_0_12px_rgba(245,158,11,0.08)] transition-all duration-300">
                   {/* Input field */}
                   <input
                     type="text"
