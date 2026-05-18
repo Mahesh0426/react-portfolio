@@ -6,6 +6,7 @@ import { CgClose } from "react-icons/cg";
 import { IoSend } from "react-icons/io5";
 import { FaMicrophone } from "react-icons/fa";
 import { getResponseStream } from "./prompt";
+import TypingIndicator from "./TypingIndicator";
 
 function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,7 @@ function ChatBot() {
   const messagesEndRef = useRef(null);
   const [isRecording, setIsRecording] = useState(false);
   const [recognition, setRecognition] = useState(null);
+
   const originalInputRef = useRef("");
 
   // Initialize messages state after hooks are declared
@@ -246,7 +248,7 @@ function ChatBot() {
                 </div>
                 <div>
                   <p className="text-amber-200 font-semibold text-sm">
-                    Mahesh Assistant
+                    Mahesh AI Assistant
                   </p>
                   <p className="text-green-400 text-xs">Online</p>
                 </div>
@@ -303,50 +305,7 @@ function ChatBot() {
               ))}
 
               {/* Typing indicator */}
-              {isTyping && (
-                <motion.div
-                  initial={{ opacity: 0, y: 9 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="flex items-end gap-2 justify-start"
-                >
-                  <img
-                    src={chatbotIcon}
-                    alt="Bot"
-                    className="w-7 h-7 rounded-full object-cover border border-amber-500/50 flex-shrink-0"
-                  />
-                  <div className="px-4 py-3 rounded-2xl bg-slate-700/80 text-slate-200 rounded-bl-sm border border-slate-600/30 overflow-hidden">
-                    <div className="flex space-x-1.5 items-center">
-                      <span
-                        className="block w-2 h-2 bg-slate-400 rounded-full"
-                        style={{
-                          animation: "typingDot 1.4s ease-in-out infinite",
-                          animationDelay: "0ms",
-                        }}
-                      ></span>
-                      <span
-                        className="block w-2 h-2 bg-slate-400 rounded-full"
-                        style={{
-                          animation: "typingDot 1.4s ease-in-out infinite",
-                          animationDelay: "200ms",
-                        }}
-                      ></span>
-                      <span
-                        className="block w-2 h-2 bg-slate-400 rounded-full"
-                        style={{
-                          animation: "typingDot 1.4s ease-in-out infinite",
-                          animationDelay: "400ms",
-                        }}
-                      ></span>
-                    </div>
-                    <style>{`
-                      @keyframes typingDot {
-                        0%, 80%, 100% { transform: scale(1); opacity: 0.4; }
-                        40% { transform: scale(1.3) translateY(-1px); opacity: 1; }
-                      }
-                    `}</style>
-                  </div>
-                </motion.div>
-              )}
+              {isTyping && <TypingIndicator chatbotIcon={chatbotIcon} />}
 
               <div ref={messagesEndRef} />
             </div>
@@ -361,7 +320,10 @@ function ChatBot() {
                   title={isRecording ? "Stop speaking" : "click to `Speak"}
                 >
                   {isRecording ? (
-                    <FaMicrophone className="w-4 h-4 animate-pulse" />
+                    <div className="relative flex items-center justify-center">
+                      <FaMicrophone className="w-4 h-4 text-amber-400 animate-pulse" />
+                      <span className="absolute w-6 h-6 rounded-full border border-amber-400 opacity-50 animate-ping" />
+                    </div>
                   ) : (
                     <FaMicrophone className="w-4 h-4" />
                   )}
@@ -373,7 +335,9 @@ function ChatBot() {
                     value={inputValue}
                     onChange={(e) => setInputValue(e.target.value)}
                     onKeyDown={handleKeyDown}
-                    placeholder="Type a message..."
+                    placeholder={
+                      isRecording ? "Bot is listening..." : "Type a message..."
+                    }
                     className="flex-1 bg-transparent text-slate-200 placeholder-slate-500 text-sm py-1.5 focus:outline-none"
                   />
 
