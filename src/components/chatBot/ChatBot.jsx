@@ -8,6 +8,15 @@ import { FaMicrophone } from "react-icons/fa";
 import { getResponseStream } from "./prompt";
 import TypingIndicator from "./TypingIndicator";
 
+const INITIAL_MESSAGES = [
+  {
+    id: 1,
+    type: "bot",
+    text: "Hey there! 👋 I'm Mahesh's assistant bot. Ask me anything about his skills, projects, or experience!",
+    time: Date.now(),
+  },
+];
+
 function ChatBot() {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
@@ -18,15 +27,19 @@ function ChatBot() {
 
   const originalInputRef = useRef("");
 
-  // Initialize messages state after hooks are declared
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      type: "bot",
-      text: "Hey there! 👋 I'm Mahesh's assistant bot. Ask me anything about his skills, projects, or experience!",
-      time: Date.now(),
-    },
-  ]);
+  // Initialize messages state for current chat session
+  const [messages, setMessages] = useState(INITIAL_MESSAGES);
+
+  const handleClose = () => {
+    if (isRecording && recognition) {
+      recognition.stop();
+      setIsRecording(false);
+    }
+    setIsOpen(false);
+    setMessages(INITIAL_MESSAGES);
+    setInputValue("");
+    setIsTyping(false);
+  };
 
   // Format time helper
   const formatTime = (date) => {
@@ -108,6 +121,17 @@ function ChatBot() {
 
     const botMsgId = Date.now() + 1;
 
+    // Build session conversation history for OpenAI format
+    const conversationHistory = [
+      ...messages
+        .filter((m) => m.text && m.text.trim().length > 0)
+        .map((m) => ({
+          role: m.type === "user" ? "user" : "assistant",
+          content: m.text,
+        })),
+      { role: "user", content: userMsg.text },
+    ];
+
     setMessages((prev) => [...prev, userMsg]);
     setInputValue("");
     originalInputRef.current = "";
@@ -145,8 +169,8 @@ function ChatBot() {
         }
       }, 20);
 
-      // Stream fills the buffer
-      await getResponseStream(userMsg.text, (streamedText) => {
+      // Stream fills the buffer with context history
+      await getResponseStream(conversationHistory, (streamedText) => {
         fullBuffer = streamedText;
       });
       streamDone = true;
@@ -254,7 +278,7 @@ function ChatBot() {
                 </div>
               </div>
               <button
-                onClick={() => setIsOpen(false)}
+                onClick={handleClose}
                 className="text-slate-400 hover:text-white transition-colors duration-200 p-1 hover:bg-slate-700 rounded-lg cursor-pointer"
               >
                 {/* Close Button */}
