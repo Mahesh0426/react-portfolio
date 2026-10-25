@@ -42,6 +42,25 @@
     "src": "project-image/AI_thumbnail.png"
   },
   {
+    "id": 2.1,
+    "name": "ChaiGPT",
+    "description": "This project is a ChatGPT clone that replicates the functionality of OpenAI's ChatGPT. It allows users to interact with an AI model in a conversational manner, providing responses to user queries in real-time. The application is designed to offer a seamless and intuitive chat experience, making it easy for users to engage with the AI for various purposes, such as information retrieval, casual conversation, and more.",
+    "repo": "https://github.com/Mahesh0426/ChatGPT_Streaming_Clone",
+    "live": "https://chaigpt.cloud/",
+    "tech": [
+      "Next.js",
+      "Vercel AI SDK",
+      "Tailwindcss CSS",
+      "AI Elements",
+      "Postgress",
+      "NeonDB,",
+      "VPS",
+      "Docker",
+      "Github actions"
+    ],
+    "src": "public/project-image/chaiGPT.png"
+  },
+  {
     "id": 2,
     "name": "Real Time Chat Application",
     "description": "This real-time chat application delivers a seamless messaging experience, similar to popular platforms like Messenger. Users can engage in one-on-one or group conversations with instant delivery, typing indicators, and read receipts. The app supports secure authentication, smooth media sharing, and a responsive interface for all devices.",

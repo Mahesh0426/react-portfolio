@@ -5,6 +5,7 @@ import tech from "../../assets/tech.json";
 const openai = new OpenAI({
   apiKey: import.meta.env.VITE_GROQ_API_KEY,
   baseURL: "https://api.groq.com/openai/v1",
+
   dangerouslyAllowBrowser: true,
 });
 
@@ -119,7 +120,7 @@ export const getResponseStream = async (conversationHistory, onChunk) => {
     : [{ role: "user", content: conversationHistory }];
 
   const stream = await openai.chat.completions.create({
-    model: "llama-3.3-70b-versatile",
+    model: "openai/gpt-oss-20b",
     messages: [
       { role: "system", content: systemPromptMahesh },
       ...historyMessages,
