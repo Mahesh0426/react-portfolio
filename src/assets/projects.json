@@ -46,7 +46,7 @@
     "name": "ChaiGPT",
     "description": "This project is a ChatGPT clone that replicates the functionality of OpenAI's ChatGPT. It allows users to interact with an AI model in a conversational manner, providing responses to user queries in real-time. The application is designed to offer a seamless and intuitive chat experience, making it easy for users to engage with the AI for various purposes, such as information retrieval, casual conversation, and more.",
     "repo": "https://github.com/Mahesh0426/ChatGPT_Streaming_Clone",
-    "live": "https://chaigpt.cloud/",
+    "live": "https://chaigpt.maheshkunwar.dev/",
     "tech": [
       "Next.js",
       "Vercel AI SDK",
@@ -56,7 +56,8 @@
       "NeonDB,",
       "VPS",
       "Docker",
-      "Github actions"
+      "Github actions",
+      "ci/cd"
     ],
     "src": "public/project-image/chaiGPT.png"
   },
